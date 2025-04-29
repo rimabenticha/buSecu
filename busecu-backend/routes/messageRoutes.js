@@ -3,7 +3,7 @@ const router = express.Router();
 const { createMessage } = require('../controllers/messageController');
 const Message = require('../models/Message');
 
-router.post('/send', messageController.sendMessageToParent);
+//router.post('/send', messageController.sendMessageToParent);
 router.post('/', createMessage);
 router.get('/', async (req, res) => {
     try {
